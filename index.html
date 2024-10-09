@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu do JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <h1>Museu da História do JavaScript</h1>
+            <button onclick="showPopup('jsHtml')">JavaScript + HTML</button>
+            <button onclick="showPopup('jsCss')">JavaScript + CSS</button>
+            <button onclick="showPopup('jsPhp')">JavaScript + PHP</button>
+        </div>
+    </nav>
+    <div class="introducao">
+        <h2>Seja muito bem vindo a nossa página  sobre o JavaScript e como ele se comporta junto com outros elementos da programação</h2>
+        <p>Obrigado pela visita!</p>
+    </div>
+
+    <div id="popup">
+        <div class="popup" id="jsHtml">
+            <span class="close" onclick="hidePopup('jsHtml')">&times;</span>
+            <div class="popup-content">
+                <h2>JavaScript + HTML</h2>
+                <p>JavaScript é usado para adicionar interatividade às páginas HTML, permitindo criar  conteúdos dinâmicos,paginas mais interessantes e interativos com o usario,enquanto o HTML é basicamente o documento de texto da página o JavaScript faz a magica de acontecer</p>
+                <img src="js-html.png" alt="JavaScript e HTML">
+            </div>
+        </div>
+
+        <div class="popup" id="jsCss">
+            <span class="close" onclick="hidePopup('jsCss')">&times;</span>
+            <div class="popup-content">
+                <h2>JavaScript + CSS</h2>
+                <p>JavaScript pode manipular estilos CSS em tempo real, permitindo animações e transições de maneira mais interativa, mudanças de layout,assim como o CSS pode estilizar os elementos do JavaScript</p>
+                <img src="js-html.png" alt="JavaScript e CSS">
+            </div>
+        </div>
+
+        <div class="popup" id="jsPhp">
+            <span class="close" onclick="hidePopup('jsPhp')">&times;</span>
+            <div class="popup-content">
+                <h2>JavaScript + PHP</h2>
+                <p>JavaScript interage com PHP em aplicações web, permitindo a atualização de dados sem recarregar a página,tornando tudo mais rápido e prático</p>
+                <img src="js-php.png" alt="JavaScript e PHP">
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
